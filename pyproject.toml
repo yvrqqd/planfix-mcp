@@ -1,13 +1,11 @@
 [project]
 name = "planfix-mcp"
 version = "0.1.0"
-description = "Open-source stdio MCP server for Planfix CRM: in-process login and curated read-only domain tools"
+description = "stdio MCP server for Planfix CRM"
 readme = "README.md"
-license = "MIT"
 keywords = ["ai", "crm", "mcp", "planfix"]
 classifiers = [
     "Development Status :: 3 - Alpha",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.14",
     "Topic :: Office/Business",
@@ -35,15 +33,13 @@ packages = ["src/planfix_mcp"]
 [tool.hatch.build.targets.sdist]
 include = [
     "/.env.example",
-    "/LICENSE",
     "/README.en.md",
     "/README.md",
     "/docs/images/readme-capabilities.svg",
     "/pyproject.toml",
     "/run.py",
-    "/setup.sh",
     "/src",
-    "/tests",
+#    "/tests",
 ]
 
 [dependency-groups]
@@ -103,5 +99,5 @@ omit = [
 ]
 
 [tool.coverage.report]
-fail_under = 85
+fail_under = 95
 show_missing = true

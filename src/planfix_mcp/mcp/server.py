@@ -7,7 +7,7 @@ from mcp.server.fastmcp import FastMCP
 
 from planfix_mcp.config import SETTINGS
 from planfix_mcp.errors import PlanfixMcpError
-from planfix_mcp.logs import configure_logging, fastmcp_log_level
+from planfix_mcp.logs import configure_logging
 from planfix_mcp.mcp.instructions import INSTRUCTIONS
 from planfix_mcp.mcp.runtime import PlanfixRuntime
 from planfix_mcp.mcp.tools import register_tools
@@ -33,7 +33,6 @@ def build_server(runtime: PlanfixRuntime | None = None) -> FastMCP:
     mcp = FastMCP(
         name='planfix-mcp',
         instructions=INSTRUCTIONS,
-        log_level=fastmcp_log_level(SETTINGS.log_level),
         lifespan=lifespan,
     )
     register_tools(mcp, state)

@@ -70,8 +70,8 @@ class PlanfixRuntime:
             raise ConfigError('PF_DOMAIN must be a valid hostname without scheme, port, or path') from exc
         if not math.isfinite(SETTINGS.browser_timeout) or SETTINGS.browser_timeout <= 0:
             raise ConfigError('PF_BROWSER_TIMEOUT must be positive')
-        if not math.isfinite(SETTINGS.ajax_rps) or SETTINGS.ajax_rps <= 0:
-            raise ConfigError('PF_AJAX_RPS must be positive')
+        if not math.isfinite(SETTINGS.rps) or SETTINGS.rps <= 0:
+            raise ConfigError('PF_RPS must be positive')
         return domain, username, password, language
 
     def _build_client(self) -> PlanfixClient:
@@ -86,7 +86,7 @@ class PlanfixRuntime:
                 browser_bin=SETTINGS.browser_bin,
                 timeout_s=SETTINGS.browser_timeout,
             ),
-            limiter=RateLimiter(min(SETTINGS.ajax_rps, 1.0)),
+            limiter=RateLimiter(min(SETTINGS.rps, 1.0)),
         )
 
     def _get_client(self) -> SessionClient:

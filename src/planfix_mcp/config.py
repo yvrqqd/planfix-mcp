@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     pf_lang: str = Field(default='Ru', alias='PF_LANG')
     browser_bin: str = Field(default='', alias='PF_BROWSER_BIN')
     browser_timeout: float = Field(default=60.0, alias='PF_BROWSER_TIMEOUT')
-    ajax_rps: float = Field(default=1.0, alias='PF_AJAX_RPS')
+    rps: float = Field(default=1.0, alias='PF_RPS')
     log_level: str = Field(default='INFO', alias='LOGGING_LEVEL')
 
 
