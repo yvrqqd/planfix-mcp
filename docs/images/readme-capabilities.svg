@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1028" viewBox="0 0 1600 1028" role="img" aria-labelledby="title desc">
+  <title id="title">Доступные данные Planfix</title>
+  <desc id="desc">15 доменных разделов и человекочитаемый список операций чтения.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1A1A1A" stroke-opacity=".035"/>
+    </pattern>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="122%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1A1A1A" flood-opacity=".08"/>
+    </filter>
+    <clipPath id="col"><rect width="488" height="932" rx="20"/></clipPath>
+    <style>
+      .group { font: 800 16px Inter, Arial, sans-serif; letter-spacing: 1px; fill: #FFFFFF; }
+      .name { font: 800 20px Inter, Arial, sans-serif; fill: #1A1A1A; }
+      .code { font: 600 13px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #777771; }
+      .data { font: 400 14px Inter, Arial, sans-serif; fill: #30302E; }
+    </style>
+  </defs>
+  <rect width="1600" height="1028" fill="#FAFAF8"/>
+  <rect width="1600" height="1028" fill="url(#grid)"/>
+  <g transform="translate(48 48)" filter="url(#shadow)">
+    <rect width="488" height="932" rx="20" fill="#FFFFFF" stroke="#E4E4DF" stroke-width="2"/>
+    <g clip-path="url(#col)">
+      <rect width="488" height="52" fill="#1A1A1A"/>
+      <rect width="488" height="6" fill="#D14836"/>
+      <text x="24" y="36" class="group">ОПЕРАЦИОННЫЕ ДАННЫЕ</text>
+      <g transform="translate(0 52)">
+        <rect width="488" height="242" fill="#FFFFFF"/>
+        <rect width="5" height="242" fill="#D14836"/>
+        <text x="24" y="44" class="name">Задачи</text>
+        <text x="24" y="68" class="code">tasks · 18 операций</text>
+        <text x="24" y="96" class="data">счётчики, список, карточка, комментарии</text>
+        <text x="24" y="118" class="data">история комментариев, поиск, технический лог</text>
+        <text x="24" y="140" class="data">поиск комментариев, чек-лист, связи</text>
+        <text x="24" y="162" class="data">напоминания, исполнители, контакты задачи</text>
+        <text x="24" y="184" class="data">число подзадач, доступ, данные задачи, поля</text>
+        <text x="24" y="206" class="data">шаблон по умолчанию</text>
+      </g>
+      <g transform="translate(0 294)">
+        <rect width="488" height="154" fill="#FAFAF8"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Проекты</text>
+        <text x="24" y="68" class="code">projects · 5 операций</text>
+        <text x="24" y="96" class="data">счётчики, список, проекты задачи, шаблоны, поиск</text>
+      </g>
+      <g transform="translate(0 448)">
+        <rect width="488" height="154" fill="#FFFFFF"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Контакты</text>
+        <text x="24" y="68" class="code">contacts · 6 операций</text>
+        <text x="24" y="96" class="data">счётчики, список, карточка по логину, поиск</text>
+        <text x="24" y="118" class="data">поиск клиентов, шаблоны</text>
+      </g>
+      <g transform="translate(0 602)">
+        <rect width="488" height="198" fill="#FAFAF8"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Сотрудники</text>
+        <text x="24" y="68" class="code">employees · 13 операций</text>
+        <text x="24" y="96" class="data">список, карточка, группы, права администратора</text>
+        <text x="24" y="118" class="data">поиск, выбор сотрудника, оргструктура</text>
+        <text x="24" y="140" class="data">должности, личные настройки, меню пространства</text>
+        <text x="24" y="162" class="data">онлайн-статус, рабочее время, типы отсутствий</text>
+      </g>
+      <g transform="translate(0 800)">
+        <rect width="488" height="132" fill="#FFFFFF"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Документы</text>
+        <text x="24" y="68" class="code">documents · 2 операции</text>
+        <text x="24" y="96" class="data">файлы и папки, поиск</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(556 48)" filter="url(#shadow)">
+    <rect width="488" height="932" rx="20" fill="#FFFFFF" stroke="#E4E4DF" stroke-width="2"/>
+    <g clip-path="url(#col)">
+      <rect width="488" height="52" fill="#1A1A1A"/>
+      <rect width="488" height="6" fill="#FFB200"/>
+      <text x="24" y="36" class="group">СТРУКТУРА ДАННЫХ</text>
+      <g transform="translate(0 52)">
+        <rect width="488" height="203" fill="#FFFFFF"/>
+        <rect width="5" height="203" fill="#FFB200"/>
+        <text x="24" y="44" class="name">Справочники</text>
+        <text x="24" y="68" class="code">handbooks · 8 операций</text>
+        <text x="24" y="96" class="data">список, строки, колонки, история изменений</text>
+        <text x="24" y="118" class="data">доступ к справочникам, доступ к строкам, поиск</text>
+        <text x="24" y="140" class="data">поиск строк</text>
+      </g>
+      <g transform="translate(0 255)">
+        <rect width="488" height="159" fill="#FAFAF8"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Планировщики</text>
+        <text x="24" y="68" class="code">planners · 3 операции</text>
+        <text x="24" y="96" class="data">все доски, список, число фильтров</text>
+      </g>
+      <g transform="translate(0 414)">
+        <rect width="488" height="180" fill="#FFFFFF"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Фильтры</text>
+        <text x="24" y="68" class="code">filters · 6 операций</text>
+        <text x="24" y="96" class="data">все фильтры, параметры, колонки, права доступа</text>
+        <text x="24" y="118" class="data">для планировщика, для справочника</text>
+      </g>
+      <g transform="translate(0 594)">
+        <rect width="488" height="180" fill="#FAFAF8"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Аналитики</text>
+        <text x="24" y="68" class="code">analytics · 4 операции</text>
+        <text x="24" y="96" class="data">список, из задачи, доступные для просмотра</text>
+        <text x="24" y="118" class="data">права доступа</text>
+      </g>
+      <g transform="translate(0 774)">
+        <rect width="488" height="158" fill="#FFFFFF"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Отчёты</text>
+        <text x="24" y="68" class="code">reports · 1 операция</text>
+        <text x="24" y="96" class="data">определения отчётов</text>
+      </g>
+    </g>
+  </g>
+  <g transform="translate(1064 48)" filter="url(#shadow)">
+    <rect width="488" height="932" rx="20" fill="#FFFFFF" stroke="#E4E4DF" stroke-width="2"/>
+    <g clip-path="url(#col)">
+      <rect width="488" height="52" fill="#1A1A1A"/>
+      <rect width="488" height="6" fill="#2E7D32"/>
+      <text x="24" y="36" class="group">НАСТРОЙКИ И КОНТРОЛЬ</text>
+      <g transform="translate(0 52)">
+        <rect width="488" height="207" fill="#FFFFFF"/>
+        <rect width="5" height="207" fill="#2E7D32"/>
+        <text x="24" y="44" class="name">Автоматизация</text>
+        <text x="24" y="68" class="code">automation · 9 операций</text>
+        <text x="24" y="96" class="data">процессы, автоматические сценарии, макросы</text>
+        <text x="24" y="118" class="data">все статусы, запреты статусов</text>
+        <text x="24" y="140" class="data">правила статусов, поля событий</text>
+        <text x="24" y="162" class="data">журнал сценариев, пользовательские операции</text>
+      </g>
+      <g transform="translate(0 259)">
+        <rect width="488" height="207" fill="#FAFAF8"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Настройки аккаунта</text>
+        <text x="24" y="68" class="code">account_config · 10 операций</text>
+        <text x="24" y="96" class="data">обзор, шаблоны задач, пользовательские поля</text>
+        <text x="24" y="118" class="data">системные поля, скрытые поля, email-правила</text>
+        <text x="24" y="140" class="data">типы email-правил, интеграции, группы доступа</text>
+        <text x="24" y="162" class="data">входящие вебхуки</text>
+      </g>
+      <g transform="translate(0 466)">
+        <rect width="488" height="141" fill="#FFFFFF"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Рабочие пространства</text>
+        <text x="24" y="68" class="code">workspace · 2 операции</text>
+        <text x="24" y="96" class="data">список, конфигурация</text>
+      </g>
+      <g transform="translate(0 607)">
+        <rect width="488" height="163" fill="#FAFAF8"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Аудит</text>
+        <text x="24" y="68" class="code">audit · 4 операции</text>
+        <text x="24" y="96" class="data">системный журнал, события сотрудника</text>
+        <text x="24" y="118" class="data">меню хроники, мои действия</text>
+      </g>
+      <g transform="translate(0 770)">
+        <rect width="488" height="162" fill="#FFFFFF"/>
+        <line x1="24" x2="464" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
+        <text x="24" y="44" class="name">Сессия</text>
+        <text x="24" y="68" class="code">session · 4 операции</text>
+        <text x="24" y="96" class="data">статус сессии, выход, типы телефонов</text>
+        <text x="24" y="118" class="data">уведомления</text>
+      </g>
+    </g>
+  </g>
+</svg>

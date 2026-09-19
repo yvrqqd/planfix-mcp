@@ -1,0 +1,458 @@
+{
+  "block_order": [
+    "tasks",
+    "projects",
+    "contacts",
+    "employees",
+    "handbooks",
+    "documents",
+    "planners",
+    "filters",
+    "analytics",
+    "reports",
+    "automation",
+    "account_config",
+    "workspace",
+    "audit",
+    "session"
+  ],
+  "aspect_routes": {
+    "tasks": [
+      {
+        "aspect": "counts",
+        "command": "task:counts"
+      },
+      {
+        "aspect": "list",
+        "command": "task:changeFilter"
+      },
+      {
+        "aspect": "card",
+        "command": "action:getNewActions"
+      },
+      {
+        "aspect": "actions",
+        "command": "action:getNewActions"
+      },
+      {
+        "aspect": "card_data",
+        "command": "action:getTaskCardData"
+      },
+      {
+        "aspect": "global_search",
+        "command": "search:tasks"
+      },
+      {
+        "aspect": "tech_log",
+        "command": "log:load"
+      },
+      {
+        "aspect": "search_actions",
+        "command": "search:actions"
+      },
+      {
+        "aspect": "checklist",
+        "command": "task:selectTaskCheckList"
+      },
+      {
+        "aspect": "dependencies",
+        "command": "taskdeps:selectDep"
+      },
+      {
+        "aspect": "reminders",
+        "command": "task:getReminders"
+      },
+      {
+        "aspect": "workers",
+        "command": "task:getWorkers"
+      },
+      {
+        "aspect": "task_contacts",
+        "command": "task:selectContacts"
+      },
+      {
+        "aspect": "subtask_count",
+        "command": "task:getCountSubtasks"
+      },
+      {
+        "aspect": "access_logins",
+        "command": "task:getLoginsWithAccess"
+      },
+      {
+        "aspect": "task_data",
+        "command": "task:getTaskData"
+      },
+      {
+        "aspect": "fields",
+        "command": "task:getFields"
+      },
+      {
+        "aspect": "default_template",
+        "command": "task:getDefaultTemplateId"
+      }
+    ],
+    "projects": [
+      {
+        "aspect": "counts",
+        "command": "project:countFilter"
+      },
+      {
+        "aspect": "list",
+        "command": "project:changeFilter"
+      },
+      {
+        "aspect": "for_task",
+        "command": "project:getListForTask"
+      },
+      {
+        "aspect": "templates",
+        "command": "project:getListTemplates"
+      },
+      {
+        "aspect": "global_search",
+        "command": "search:projects"
+      }
+    ],
+    "contacts": [
+      {
+        "aspect": "counts",
+        "command": "crm:counts"
+      },
+      {
+        "aspect": "list",
+        "command": "crm:changeFilter"
+      },
+      {
+        "aspect": "by_login",
+        "command": "contact:getByLoginId"
+      },
+      {
+        "aspect": "global_search",
+        "command": "search:contacts"
+      },
+      {
+        "aspect": "client_search",
+        "command": "search:clients"
+      },
+      {
+        "aspect": "templates",
+        "command": "crm:getTemplateListForTask"
+      }
+    ],
+    "employees": [
+      {
+        "aspect": "list",
+        "command": "user:changeFilter"
+      },
+      {
+        "aspect": "get",
+        "command": "user:get"
+      },
+      {
+        "aspect": "groups",
+        "command": "group:selectList"
+      },
+      {
+        "aspect": "is_admin",
+        "command": "user:isAdmin"
+      },
+      {
+        "aspect": "global_search",
+        "command": "search:users"
+      },
+      {
+        "aspect": "picker",
+        "command": "user:selectList"
+      },
+      {
+        "aspect": "orgtree",
+        "command": "user:selectListsForOrgtreeBlock"
+      },
+      {
+        "aspect": "posts",
+        "command": "user:getUserPosts"
+      },
+      {
+        "aspect": "settings",
+        "command": "user:getUserSettings"
+      },
+      {
+        "aspect": "workspace_menu_settings",
+        "command": "user:getWorkSpaceMenuListForSettings"
+      },
+      {
+        "aspect": "online",
+        "command": "online:getList"
+      },
+      {
+        "aspect": "workhours",
+        "command": "workhours:selectList"
+      },
+      {
+        "aspect": "holiday_types",
+        "command": "workhours:selectHolidayTypeList"
+      }
+    ],
+    "filters": [
+      {
+        "aspect": "all",
+        "command": "taskfilter:getAllFilters"
+      },
+      {
+        "aspect": "get",
+        "command": "taskfilter:getFilter"
+      },
+      {
+        "aspect": "columns",
+        "command": "taskfilter:getColumns"
+      },
+      {
+        "aspect": "access",
+        "command": "taskfilter:getFilterAccess"
+      },
+      {
+        "aspect": "for_planner",
+        "command": "taskfilter:getListForPlanner"
+      },
+      {
+        "aspect": "for_handbook",
+        "command": "taskfilter:getFilterListForHandbook"
+      }
+    ],
+    "handbooks": [
+      {
+        "aspect": "list",
+        "command": "handbook:selectHandbooks",
+        "detail_command": "handbook:getHandbookInfo"
+      },
+      {
+        "aspect": "data",
+        "command": "handbook:selectDataList"
+      },
+      {
+        "aspect": "columns",
+        "command": "handbook:getColumnsSettings"
+      },
+      {
+        "aspect": "logs",
+        "command": "handbook:getLogs"
+      },
+      {
+        "aspect": "access_objects",
+        "command": "handbookaccess:getObjects"
+      },
+      {
+        "aspect": "access_rows",
+        "command": "handbookaccess:getRows"
+      },
+      {
+        "aspect": "global_search",
+        "command": "search:handbook"
+      },
+      {
+        "aspect": "data_search",
+        "command": "search:handbookdata"
+      }
+    ],
+    "account_config": [
+      {
+        "aspect": "overview",
+        "command": "__overview__"
+      },
+      {
+        "aspect": "task_templates",
+        "command": "task:getTemplateListAll",
+        "detail_command": "task:getTaskTemplateFields"
+      },
+      {
+        "aspect": "custom_fields",
+        "command": "taskcustom:selectList"
+      },
+      {
+        "aspect": "custom_field_system",
+        "command": "taskcustom:getSystemFieldList"
+      },
+      {
+        "aspect": "custom_field_hidden",
+        "command": "taskcustom:getHiddenFields"
+      },
+      {
+        "aspect": "email_filters",
+        "command": "emailfilter:selectList"
+      },
+      {
+        "aspect": "email_filter_types",
+        "command": "emailfilter:getTypeLists"
+      },
+      {
+        "aspect": "integrations",
+        "command": "conf:selectList"
+      },
+      {
+        "aspect": "access_groups",
+        "command": "accessrule:getGroupsAndClients"
+      },
+      {
+        "aspect": "incoming_webhooks",
+        "path": "/j/webhook/selectList",
+        "referer": "/?action=webhook"
+      }
+    ],
+    "automation": [
+      {
+        "aspect": "status_sets",
+        "command": "status:selectSetList",
+        "detail_command": "status:getSet"
+      },
+      {
+        "aspect": "triggers",
+        "command": "status:getTriggers",
+        "detail_command": "status:getTrigger"
+      },
+      {
+        "aspect": "macros",
+        "command": "status:getMacrosList"
+      },
+      {
+        "aspect": "all_statuses",
+        "command": "status:selectAllStatuses"
+      },
+      {
+        "aspect": "status_ban",
+        "command": "status:getStatusBanList"
+      },
+      {
+        "aspect": "status_rules",
+        "command": "status:getStatusRulesView"
+      },
+      {
+        "aspect": "trigger_event_fields",
+        "command": "status:getTriggerEventFields"
+      },
+      {
+        "aspect": "trigger_logs",
+        "command": "status:getTriggerLogs"
+      },
+      {
+        "aspect": "custom_operations",
+        "command": "triggercustomoperation:selectList"
+      }
+    ],
+    "planners": [
+      {
+        "aspect": "all",
+        "command": "planner:getAllPlanner"
+      },
+      {
+        "aspect": "list",
+        "command": "planner:getList"
+      },
+      {
+        "aspect": "count_filters",
+        "command": "planner:countFilters"
+      }
+    ],
+    "documents": [
+      {
+        "aspect": "items",
+        "command": "docs:getItems"
+      },
+      {
+        "aspect": "global_search",
+        "command": "search:files"
+      }
+    ],
+    "analytics": [
+      {
+        "aspect": "list",
+        "command": "analitic:selectListAccessable"
+      },
+      {
+        "aspect": "from_task",
+        "command": "analitic:getAnaliticsFromTask"
+      },
+      {
+        "aspect": "available_for_view",
+        "command": "analitic:selectAvailableForView"
+      },
+      {
+        "aspect": "access",
+        "command": "analitic:getAccessInfo"
+      }
+    ],
+    "reports": [
+      {
+        "aspect": "list",
+        "command": "report:getList"
+      }
+    ],
+    "workspace": [
+      {
+        "aspect": "list",
+        "command": "workspace:selectList"
+      },
+      {
+        "aspect": "get",
+        "command": "workspace:select"
+      }
+    ],
+    "audit": [
+      {
+        "aspect": "entity_log",
+        "command": "entitylog:getLogs"
+      },
+      {
+        "aspect": "user_log",
+        "command": "userlog:getUserLogs"
+      },
+      {
+        "aspect": "chronicle_menu",
+        "command": "event:getChronicleMenu"
+      },
+      {
+        "aspect": "work_summary",
+        "command": "log:changeSummaryDate"
+      }
+    ],
+    "session": [
+      {
+        "aspect": "phone_types",
+        "command": "login:selectPhoneTypeList"
+      },
+      {
+        "aspect": "notices",
+        "command": "login:getNoticeParams"
+      }
+    ]
+  },
+  "overview_sections": [
+    {
+      "section": "is_admin",
+      "command": "user:isAdmin"
+    },
+    {
+      "section": "task_templates",
+      "command": "task:getTemplateListAll"
+    },
+    {
+      "section": "status_sets",
+      "command": "status:selectSetList"
+    },
+    {
+      "section": "handbooks",
+      "command": "handbook:selectHandbooks"
+    },
+    {
+      "section": "task_filters",
+      "command": "taskfilter:getAllFilters"
+    },
+    {
+      "section": "planners",
+      "command": "planner:getAllPlanner"
+    },
+    {
+      "section": "integrations",
+      "command": "conf:selectList"
+    }
+  ]
+}

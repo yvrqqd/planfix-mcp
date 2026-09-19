@@ -1,0 +1,34 @@
+{
+  "planner_id": {
+    "example": "124799",
+    "used_as": "planners aspect=all / list / get. Read-only in this release."
+  },
+  "task_id_object_type": {
+    "example": "7537615",
+    "used_as": "Internal TaskID of an object-type template (account_config task_templates; object settings URL objectId=). Not the user-facing number."
+  },
+  "task_general_id": {
+    "example": "11",
+    "used_as": "User-facing task number (GeneralID). Cite this in chat. tasks list object= filter. Not internal TaskID."
+  },
+  "source_template_id": {
+    "example": "7537219",
+    "used_as": "Template TaskID shown as clone source on an object type (account_config task_templates). Read-only in this release."
+  },
+  "status_set_id_source": {
+    "example": "66533",
+    "used_as": "Process id on a template (automation status_sets / expand). Read-only in this release."
+  },
+  "status_set_id_own": {
+    "example": "66535",
+    "used_as": "Object type's own process id after it has a dedicated status set. Read via automation status_sets."
+  },
+  "workspace_id": {
+    "example": "29373",
+    "used_as": "workspace aspect=get object=. list may be empty while Current.workSpaceId still exists."
+  },
+  "object_type_class": {
+    "example": "1",
+    "used_as": "Entity class 1/2/3/4 = task/project/contact/employee. Not a Deal/Ticket type id."
+  }
+}
