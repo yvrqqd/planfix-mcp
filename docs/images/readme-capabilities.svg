@@ -1,195 +1,246 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="964" height="1231" viewBox="0 0 964 1231" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="988" height="1028" viewBox="0 0 988 1028" role="img" aria-labelledby="title desc">
   <title id="title">Доступные данные Planfix</title>
-  <desc id="desc">15 доменных разделов и человекочитаемый список операций чтения.</desc>
+  <desc id="desc">15 доменных разделов Planfix с операциями чтения.</desc>
   <defs>
-    <clipPath id="colclip"><rect width="300" height="1195" rx="16"/></clipPath>
     <style>
-      .group { font: 800 14px Arial, Helvetica, sans-serif; letter-spacing: 0.4px; fill: #FFFFFF; }
-      .name { font: 800 20px Arial, Helvetica, sans-serif; fill: #1A1A1A; }
-      .code { font: 600 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #5C5C58; }
-      .data { font: 400 16px Arial, Helvetica, sans-serif; fill: #2A2A28; }
+      .surface { fill: #151A21; stroke: #29313B; stroke-width: 1; }
+      .name {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        font-size: 16.5px;
+        font-weight: 700;
+        letter-spacing: -0.15px;
+        fill: #F1F3F5;
+      }
+      .code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        fill: #727D8A;
+      }
+      .count {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        font-size: 10.5px;
+        font-weight: 600;
+        fill: #8D97A4;
+      }
+      .item {
+        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        fill: #ABB2BC;
+      }
+      .divider { stroke: #29313B; }
+      .badge { display: none; }
+      .bullet { fill: #626D79; }
+      .accent { opacity: 0.9; }
+      .ops .accent { fill: #C9605A; }
+      .structure .accent { fill: #BD9144; }
+      .control .accent { fill: #4E9876; }
     </style>
   </defs>
-  <rect width="964" height="1231" fill="#FAFAF8"/>
-  <g transform="translate(18 18)">
-    <g clip-path="url(#colclip)">
-      <rect width="300" height="1195" fill="#FFFFFF"/>
-      <rect width="300" height="54" fill="#1A1A1A"/>
-      <rect width="300" height="6" fill="#D14836"/>
-      <text x="18" y="34" class="group">ОПЕРАЦИОННЫЕ ДАННЫЕ</text>
-      <g transform="translate(0 54)">
-        <rect width="300" height="357" fill="#FFFFFF"/>
-        <rect width="6" height="357" fill="#D14836"/>
-        <text x="18" y="36" class="name">Задачи</text>
-        <text x="18" y="58" class="code">tasks · 18 операций</text>
-        <text x="18" y="86" class="data">счётчики, список, карточка</text>
-        <text x="18" y="109" class="data">комментарии</text>
-        <text x="18" y="132" class="data">история комментариев</text>
-        <text x="18" y="155" class="data">поиск, технический лог</text>
-        <text x="18" y="178" class="data">поиск комментариев</text>
-        <text x="18" y="201" class="data">чек-лист, связи</text>
-        <text x="18" y="224" class="data">напоминания, исполнители</text>
-        <text x="18" y="247" class="data">контакты задачи</text>
-        <text x="18" y="270" class="data">число подзадач, доступ</text>
-        <text x="18" y="293" class="data">данные задачи, поля</text>
-        <text x="18" y="316" class="data">шаблон по умолчанию</text>
-      </g>
-      <g transform="translate(0 411)">
-        <rect width="300" height="173" fill="#F4F4F0"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Проекты</text>
-        <text x="18" y="58" class="code">projects · 5 операций</text>
-        <text x="18" y="86" class="data">счётчики, список</text>
-        <text x="18" y="109" class="data">проекты задачи, шаблоны</text>
-        <text x="18" y="132" class="data">поиск</text>
-      </g>
-      <g transform="translate(0 584)">
-        <rect width="300" height="173" fill="#FFFFFF"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Контакты</text>
-        <text x="18" y="58" class="code">contacts · 6 операций</text>
-        <text x="18" y="86" class="data">счётчики, список</text>
-        <text x="18" y="109" class="data">карточка по логину, поиск</text>
-        <text x="18" y="132" class="data">поиск клиентов, шаблоны</text>
-      </g>
-      <g transform="translate(0 757)">
-        <rect width="300" height="311" fill="#F4F4F0"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Сотрудники</text>
-        <text x="18" y="58" class="code">employees · 13 операций</text>
-        <text x="18" y="86" class="data">список, карточка, группы</text>
-        <text x="18" y="109" class="data">права администратора</text>
-        <text x="18" y="132" class="data">поиск, выбор сотрудника</text>
-        <text x="18" y="155" class="data">оргструктура, должности</text>
-        <text x="18" y="178" class="data">личные настройки</text>
-        <text x="18" y="201" class="data">меню пространства</text>
-        <text x="18" y="224" class="data">онлайн-статус</text>
-        <text x="18" y="247" class="data">рабочее время</text>
-        <text x="18" y="270" class="data">типы отсутствий</text>
-      </g>
-      <g transform="translate(0 1068)">
-        <rect width="300" height="127" fill="#FFFFFF"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Документы</text>
-        <text x="18" y="58" class="code">documents · 2 операции</text>
-        <text x="18" y="86" class="data">файлы и папки, поиск</text>
-      </g>
-    </g>
-    <rect width="300" height="1195" rx="16" fill="none" stroke="#E4E4DF" stroke-width="2"/>
+
+  <rect width="988" height="1028" fill="#0D1117"/>
+
+  <g class="card ops" transform="translate(24 24)">
+    <rect class="surface" width="300" height="316" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Задачи</text>
+    <text x="18" y="60" class="code">tasks</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">18 операций</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">счётчики, список, карточка</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">комментарии</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">история комментариев</tspan></text>
+    <text x="18" y="158" class="item"><tspan class="bullet">•</tspan><tspan dx="9">поиск, технический лог</tspan></text>
+    <text x="18" y="178" class="item"><tspan class="bullet">•</tspan><tspan dx="9">поиск комментариев</tspan></text>
+    <text x="18" y="198" class="item"><tspan class="bullet">•</tspan><tspan dx="9">чек-лист, связи</tspan></text>
+    <text x="18" y="218" class="item"><tspan class="bullet">•</tspan><tspan dx="9">напоминания, исполнители</tspan></text>
+    <text x="18" y="238" class="item"><tspan class="bullet">•</tspan><tspan dx="9">контакты задачи</tspan></text>
+    <text x="18" y="258" class="item"><tspan class="bullet">•</tspan><tspan dx="9">число подзадач, доступ</tspan></text>
+    <text x="18" y="278" class="item"><tspan class="bullet">•</tspan><tspan dx="9">данные задачи, поля</tspan></text>
+    <text x="18" y="298" class="item"><tspan class="bullet">•</tspan><tspan dx="9">шаблон по умолчанию</tspan></text>
   </g>
-  <g transform="translate(332 18)">
-    <g clip-path="url(#colclip)">
-      <rect width="300" height="1195" fill="#FFFFFF"/>
-      <rect width="300" height="54" fill="#1A1A1A"/>
-      <rect width="300" height="6" fill="#FFB200"/>
-      <text x="18" y="34" class="group">СТРУКТУРА ДАННЫХ</text>
-      <g transform="translate(0 54)">
-        <rect width="300" height="219" fill="#FFFFFF"/>
-        <rect width="6" height="219" fill="#FFB200"/>
-        <text x="18" y="36" class="name">Справочники</text>
-        <text x="18" y="58" class="code">handbooks · 8 операций</text>
-        <text x="18" y="86" class="data">список, строки, колонки</text>
-        <text x="18" y="109" class="data">история изменений</text>
-        <text x="18" y="132" class="data">доступ к справочникам</text>
-        <text x="18" y="155" class="data">доступ к строкам, поиск</text>
-        <text x="18" y="178" class="data">поиск строк</text>
-      </g>
-      <g transform="translate(0 273)">
-        <rect width="300" height="150" fill="#F4F4F0"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Планировщики</text>
-        <text x="18" y="58" class="code">planners · 3 операции</text>
-        <text x="18" y="86" class="data">все доски, список</text>
-        <text x="18" y="109" class="data">число фильтров</text>
-      </g>
-      <g transform="translate(0 423)">
-        <rect width="300" height="196" fill="#FFFFFF"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Фильтры</text>
-        <text x="18" y="58" class="code">filters · 6 операций</text>
-        <text x="18" y="86" class="data">все фильтры, параметры</text>
-        <text x="18" y="109" class="data">колонки, права доступа</text>
-        <text x="18" y="132" class="data">для планировщика</text>
-        <text x="18" y="155" class="data">для справочника</text>
-      </g>
-      <g transform="translate(0 619)">
-        <rect width="300" height="173" fill="#F4F4F0"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Аналитики</text>
-        <text x="18" y="58" class="code">analytics · 4 операции</text>
-        <text x="18" y="86" class="data">список, из задачи</text>
-        <text x="18" y="109" class="data">доступные для просмотра</text>
-        <text x="18" y="132" class="data">права доступа</text>
-      </g>
-      <g transform="translate(0 792)">
-        <rect width="300" height="403" fill="#FFFFFF"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Отчёты</text>
-        <text x="18" y="58" class="code">reports · 1 операция</text>
-        <text x="18" y="86" class="data">определения отчётов</text>
-      </g>
-    </g>
-    <rect width="300" height="1195" rx="16" fill="none" stroke="#E4E4DF" stroke-width="2"/>
+  <g class="card ops" transform="translate(24 356)">
+    <rect class="surface" width="300" height="156" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Проекты</text>
+    <text x="18" y="60" class="code">projects</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">5 операций</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">счётчики, список</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">проекты задачи, шаблоны</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">поиск</tspan></text>
   </g>
-  <g transform="translate(646 18)">
-    <g clip-path="url(#colclip)">
-      <rect width="300" height="1195" fill="#FFFFFF"/>
-      <rect width="300" height="54" fill="#1A1A1A"/>
-      <rect width="300" height="6" fill="#2E7D32"/>
-      <text x="18" y="34" class="group">НАСТРОЙКИ И КОНТРОЛЬ</text>
-      <g transform="translate(0 54)">
-        <rect width="300" height="288" fill="#FFFFFF"/>
-        <rect width="6" height="288" fill="#2E7D32"/>
-        <text x="18" y="36" class="name">Автоматизация</text>
-        <text x="18" y="58" class="code">automation · 9 операций</text>
-        <text x="18" y="86" class="data">процессы</text>
-        <text x="18" y="109" class="data">автоматические сценарии</text>
-        <text x="18" y="132" class="data">макросы, все статусы</text>
-        <text x="18" y="155" class="data">запреты статусов</text>
-        <text x="18" y="178" class="data">правила статусов</text>
-        <text x="18" y="201" class="data">поля событий</text>
-        <text x="18" y="224" class="data">журнал сценариев</text>
-        <text x="18" y="247" class="data">пользовательские операции</text>
-      </g>
-      <g transform="translate(0 342)">
-        <rect width="300" height="265" fill="#F4F4F0"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Настройки аккаунта</text>
-        <text x="18" y="58" class="code">account_config · 10 операций</text>
-        <text x="18" y="86" class="data">обзор, шаблоны задач</text>
-        <text x="18" y="109" class="data">пользовательские поля</text>
-        <text x="18" y="132" class="data">системные поля</text>
-        <text x="18" y="155" class="data">скрытые поля, email-правила</text>
-        <text x="18" y="178" class="data">типы email-правил</text>
-        <text x="18" y="201" class="data">интеграции, группы доступа</text>
-        <text x="18" y="224" class="data">входящие вебхуки</text>
-      </g>
-      <g transform="translate(0 607)">
-        <rect width="300" height="127" fill="#FFFFFF"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Рабочие пространства</text>
-        <text x="18" y="58" class="code">workspace · 2 операции</text>
-        <text x="18" y="86" class="data">список, конфигурация</text>
-      </g>
-      <g transform="translate(0 734)">
-        <rect width="300" height="173" fill="#F4F4F0"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Аудит</text>
-        <text x="18" y="58" class="code">audit · 4 операции</text>
-        <text x="18" y="86" class="data">системный журнал</text>
-        <text x="18" y="109" class="data">события сотрудника</text>
-        <text x="18" y="132" class="data">меню хроники, мои действия</text>
-      </g>
-      <g transform="translate(0 907)">
-        <rect width="300" height="288" fill="#FFFFFF"/>
-        <line x1="18" x2="282" y1="0.5" stroke="#E4E4DF" stroke-width="1"/>
-        <text x="18" y="36" class="name">Сессия</text>
-        <text x="18" y="58" class="code">session · 4 операции</text>
-        <text x="18" y="86" class="data">статус сессии, выход</text>
-        <text x="18" y="109" class="data">типы телефонов</text>
-        <text x="18" y="132" class="data">уведомления</text>
-      </g>
-    </g>
-    <rect width="300" height="1195" rx="16" fill="none" stroke="#E4E4DF" stroke-width="2"/>
+  <g class="card ops" transform="translate(24 528)">
+    <rect class="surface" width="300" height="156" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Контакты</text>
+    <text x="18" y="60" class="code">contacts</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">6 операций</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">счётчики, список</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">карточка по логину, поиск</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">поиск клиентов, шаблоны</tspan></text>
+  </g>
+  <g class="card ops" transform="translate(24 700)">
+    <rect class="surface" width="300" height="276" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Сотрудники</text>
+    <text x="18" y="60" class="code">employees</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">13 операций</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">список, карточка, группы</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">права администратора</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">поиск, выбор сотрудника</tspan></text>
+    <text x="18" y="158" class="item"><tspan class="bullet">•</tspan><tspan dx="9">оргструктура, должности</tspan></text>
+    <text x="18" y="178" class="item"><tspan class="bullet">•</tspan><tspan dx="9">личные настройки</tspan></text>
+    <text x="18" y="198" class="item"><tspan class="bullet">•</tspan><tspan dx="9">меню пространства</tspan></text>
+    <text x="18" y="218" class="item"><tspan class="bullet">•</tspan><tspan dx="9">онлайн-статус</tspan></text>
+    <text x="18" y="238" class="item"><tspan class="bullet">•</tspan><tspan dx="9">рабочее время</tspan></text>
+    <text x="18" y="258" class="item"><tspan class="bullet">•</tspan><tspan dx="9">типы отсутствий</tspan></text>
+  </g>
+
+  <g class="card structure" transform="translate(344 24)">
+    <rect class="surface" width="300" height="196" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Справочники</text>
+    <text x="18" y="60" class="code">handbooks</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">8 операций</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">список, строки, колонки</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">история изменений</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">доступ к справочникам</tspan></text>
+    <text x="18" y="158" class="item"><tspan class="bullet">•</tspan><tspan dx="9">доступ к строкам, поиск</tspan></text>
+    <text x="18" y="178" class="item"><tspan class="bullet">•</tspan><tspan dx="9">поиск строк</tspan></text>
+  </g>
+  <g class="card structure" transform="translate(344 236)">
+    <rect class="surface" width="300" height="136" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Планировщики</text>
+    <text x="18" y="60" class="code">planners</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">3 операции</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">все доски, список</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">число фильтров</tspan></text>
+  </g>
+  <g class="card structure" transform="translate(344 388)">
+    <rect class="surface" width="300" height="176" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Фильтры</text>
+    <text x="18" y="60" class="code">filters</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">6 операций</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">все фильтры, параметры</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">колонки, права доступа</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">для планировщика</tspan></text>
+    <text x="18" y="158" class="item"><tspan class="bullet">•</tspan><tspan dx="9">для справочника</tspan></text>
+  </g>
+  <g class="card structure" transform="translate(344 580)">
+    <rect class="surface" width="300" height="156" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Аналитики</text>
+    <text x="18" y="60" class="code">analytics</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">4 операции</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">список, из задачи</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">доступные для просмотра</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">права доступа</tspan></text>
+  </g>
+  <g class="card structure" transform="translate(344 752)">
+    <rect class="surface" width="300" height="116" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Отчёты</text>
+    <text x="18" y="60" class="code">reports</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">1 операция</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">определения отчётов</tspan></text>
+  </g>
+  <g class="card ops" transform="translate(344 884)">
+    <rect class="surface" width="300" height="116" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Документы</text>
+    <text x="18" y="60" class="code">documents</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">2 операции</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">файлы и папки, поиск</tspan></text>
+  </g>
+
+  <g class="card control" transform="translate(664 24)">
+    <rect class="surface" width="300" height="256" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Автоматизация</text>
+    <text x="18" y="60" class="code">automation</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">9 операций</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">процессы</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">автоматические сценарии</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">макросы, все статусы</tspan></text>
+    <text x="18" y="158" class="item"><tspan class="bullet">•</tspan><tspan dx="9">запреты статусов</tspan></text>
+    <text x="18" y="178" class="item"><tspan class="bullet">•</tspan><tspan dx="9">правила статусов</tspan></text>
+    <text x="18" y="198" class="item"><tspan class="bullet">•</tspan><tspan dx="9">поля событий</tspan></text>
+    <text x="18" y="218" class="item"><tspan class="bullet">•</tspan><tspan dx="9">журнал сценариев</tspan></text>
+    <text x="18" y="238" class="item"><tspan class="bullet">•</tspan><tspan dx="9">пользовательские операции</tspan></text>
+  </g>
+  <g class="card control" transform="translate(664 296)">
+    <rect class="surface" width="300" height="236" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Настройки аккаунта</text>
+    <text x="18" y="60" class="code">account_config</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">10 операций</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">обзор, шаблоны задач</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">пользовательские поля</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">системные поля</tspan></text>
+    <text x="18" y="158" class="item"><tspan class="bullet">•</tspan><tspan dx="9">скрытые поля, email-правила</tspan></text>
+    <text x="18" y="178" class="item"><tspan class="bullet">•</tspan><tspan dx="9">типы email-правил</tspan></text>
+    <text x="18" y="198" class="item"><tspan class="bullet">•</tspan><tspan dx="9">интеграции, группы доступа</tspan></text>
+    <text x="18" y="218" class="item"><tspan class="bullet">•</tspan><tspan dx="9">входящие вебхуки</tspan></text>
+  </g>
+  <g class="card control" transform="translate(664 548)">
+    <rect class="surface" width="300" height="116" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Рабочие пространства</text>
+    <text x="18" y="60" class="code">workspace</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">2 операции</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">список, конфигурация</tspan></text>
+  </g>
+  <g class="card control" transform="translate(664 680)">
+    <rect class="surface" width="300" height="156" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Аудит</text>
+    <text x="18" y="60" class="code">audit</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">4 операции</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">системный журнал</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">события сотрудника</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">меню хроники, мои действия</tspan></text>
+  </g>
+  <g class="card control" transform="translate(664 852)">
+    <rect class="surface" width="300" height="156" rx="10"/>
+    <rect class="accent" x="18" y="18" width="4" height="20" rx="2"/>
+    <text x="32" y="35" class="name">Сессия</text>
+    <text x="18" y="60" class="code">session</text>
+    <rect x="191" y="44" width="91" height="22" rx="11" class="badge"/>
+    <text x="236.5" y="59" text-anchor="middle" class="count">4 операции</text>
+    <line x1="18" x2="282" y1="76.5" y2="76.5" class="divider"/>
+    <text x="18" y="98" class="item"><tspan class="bullet">•</tspan><tspan dx="9">статус сессии, выход</tspan></text>
+    <text x="18" y="118" class="item"><tspan class="bullet">•</tspan><tspan dx="9">типы телефонов</tspan></text>
+    <text x="18" y="138" class="item"><tspan class="bullet">•</tspan><tspan dx="9">уведомления</tspan></text>
   </g>
 </svg>
